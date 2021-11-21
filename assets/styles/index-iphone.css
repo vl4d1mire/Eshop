@@ -1,0 +1,97 @@
+@media screen and (max-width: 375px) {
+  .header__row .icons__info .icons__info-profile {
+    display: none;
+  }
+  .header__row .icons__info .icons__info-basket {
+    display: none;
+  }
+
+  .content__head {
+    height: 363px;
+  }
+  .content__head .head__image {
+    display: none;
+  }
+  .content__head .head__info {
+    width: 100%;
+  }
+
+  .content__offer .offer__items {
+    padding-top: 64px;
+  }
+  .content__offer .offer__items .items__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__offer .offer__items .items__row .items__cart {
+    min-height: 247px;
+    max-width: 343px;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .content__offer .offer__items .items__cart_4 {
+    max-width: 343px;
+    min-height: 111px;
+    margin: 32px auto 0 auto;
+    justify-content: center;
+  }
+  .content__offer .offer__items .items__cart_4 .items__cart_bg-overlay {
+    min-height: 111px;
+    max-width: 343px;
+  }
+  .content__offer .offer__items .items__cart_bg-overlay {
+    min-height: 247px;
+    max-width: 343px;
+  }
+
+  .products__title {
+    padding: 0;
+  }
+  .products__cart .cart__container .cart {
+    margin: 16px auto 0 auto;
+  }
+
+  .information {
+    padding-top: 96px;
+  }
+
+  .footer__subscribe {
+    min-height: 550px;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__quota .quota__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__item {
+    width: 100%;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__item .subscribe__item-text {
+    line-height: 153.2%;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__item .subscribe__item-text span {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__item-form {
+    height: 47px;
+    max-width: 341px;
+    margin: 0 auto;
+  }
+  .footer__subscribe .subscribe-wrapper .subscribe__item-form .item-form__input {
+    width: 100%;
+  }
+  .footer__bottom {
+    height: 143px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__bottom .bottom__copy {
+    padding-top: 38px;
+  }
+  .footer__bottom .bottom__icons {
+    padding-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=index-iphone.css.map */
