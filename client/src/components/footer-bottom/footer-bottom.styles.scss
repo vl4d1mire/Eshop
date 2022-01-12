@@ -1,0 +1,14 @@
+.footer__bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 79px;
+  background: #222224;
+
+  .bottom__copy {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+  }
+}
+

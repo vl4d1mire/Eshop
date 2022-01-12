@@ -1,0 +1,121 @@
+.footer {
+  width: 100%;
+  color: #FBFBFB;
+
+  &__subscribe {
+    background: url("https://i.ibb.co/3CFTvPK/img-13.png") 0 0/cover no-repeat;
+    width: 100%;
+    height: 448px;
+    color: #222224;
+
+    .subscribe-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      background: rgba(244, 244, 244, 0.7);
+      margin: 0 auto;
+
+      .subscribe__quota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 360px;
+
+        .quota__text {
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__subscribe {
+      min-height: 693px;
+
+      .subscribe-wrapper {
+        flex-direction: column;
+        justify-content: center;
+
+        .subscribe__item {
+          margin-top: 48px;
+
+          .subscribe__item-text {
+            line-height: 162%;
+            padding-bottom: 27px;
+          }
+
+          .subscribe__item-form {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      justify-content: space-between;
+      padding: 0 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    &__subscribe {
+      min-height: 550px;
+
+      .subscribe-wrapper {
+        .subscribe__quota {
+          .quota__text {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+
+        .subscribe__item {
+          width: 100%;
+
+          .subscribe__item-text {
+            line-height: 153.2%;
+
+            span {
+              font-size: 14px;
+              line-height: 12px;
+            }
+          }
+        }
+
+        .subscribe__item-form {
+          height: 47px;
+          max-width: 341px;
+          margin: 0 auto;
+
+          .item-form__input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      height: 143px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      .bottom__copy {
+        padding-top: 38px;
+      }
+
+      .bottom__icons {
+        padding-top: 40px;
+      }
+    }
+  }
+}
+

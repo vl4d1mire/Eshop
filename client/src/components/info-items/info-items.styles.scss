@@ -1,0 +1,36 @@
+.information__row {
+  width: 100%;
+  min-height: 341px;
+  display: flex;
+  justify-content: center;
+  color: #FBFBFB;
+  background: #222224;
+  margin: 0 auto;
+
+  .info__items {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+
+    .info__items-title {
+      font-size: 19.96px;
+      line-height: 24px;
+      padding-top: 28px;
+    }
+
+    .info__items-text {
+      text-align: center;
+      font-weight: 300;
+      font-size: 13.972px;
+      line-height: 17px;
+      padding-top: 16px;
+    }
+  }
+
+  .info__items:last-child {
+    margin-right: 0;
+  }
+}

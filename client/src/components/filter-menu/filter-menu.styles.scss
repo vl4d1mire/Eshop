@@ -1,0 +1,32 @@
+.filter__menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  width: 360px;
+  height: 531px;
+  top: -13px;
+  left: 0;
+  padding: 0 17px;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+
+  .menu__title {
+    padding-top: 13px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    display: flex;
+    align-items: center;
+
+    button {
+      color: #EF5B70;
+    }
+
+    .filter__logo {
+      //background: url("/public/images/logo/logo_filter_red.svg") no-repeat;
+    }
+  }
+
+}
