@@ -1,0 +1,242 @@
+@import "cart.css";
+
+.registration {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 64px;
+
+  &-wrap {
+    display: flex;
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+
+    .registration__form {
+      display: flex;
+      max-width: 359px;
+      min-height: 520px;
+      flex-direction: column;
+      margin-left: 14.38%;
+
+      input {
+        width: 100%;
+        height: 44px;
+        margin-top: 21px;
+        padding-left: 17px;
+      }
+
+      input::placeholder {
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+      }
+
+      .form__name {
+        display: flex;
+        flex-direction: column;
+
+        .form__checkbox {
+          display: flex;
+          column-gap: 20px;
+          padding-top: 31px;
+
+          .checkbox-wr {
+            display: flex;
+            position: relative;
+            height: 17px;
+
+            input {
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              z-index: 1;
+            }
+
+            label {
+              font-size: 11px;
+              line-height: 13px;
+            }
+
+            .checkbox__mark {
+              width: 17px;
+              height: 17px;
+              border: 1px solid #A4A4A4;
+              border-radius: 17px;
+            }
+
+            input:checked + .checkbox__mark:after {
+              content: 'x';
+              position: absolute;
+              top: -5px;
+              left: 3px;
+              font-size: 18px;
+              font-weight: bold;
+              color: orangered;
+            }
+          }
+
+          .checkbox-wr + .disabled {
+            display: none;
+          }
+        }
+      }
+
+      label {
+        padding-left: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .form__login {
+        display: flex;
+        flex-direction: column;
+        padding-top: 33px;
+
+        p {
+          font-size: 13px;
+          line-height: 16px;
+          color: #B1B1B1;
+          padding-top: 16px;
+        }
+      }
+
+      .form__login-btn {
+        margin-top: 39px;
+        width: 167px;
+        height: 50px;
+        background: #F16D7F;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        button {
+          height: 100%;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+        }
+
+        .form__login-arrow {
+          display: flex;
+          align-items: center;
+          z-index: 2;
+          height: 100%;
+
+          img {
+            width: 17px;
+            height: 10px;
+          }
+        }
+      }
+
+      .form__login-btn:hover {
+        cursor: pointer;
+        background: #E05C6E;
+      }
+    }
+
+    .registration__info {
+      max-width: 652px;
+      padding-left: 129px;
+      font-size: 24px;
+      line-height: 29px;
+
+      .info__title {
+      }
+
+      .info__subtitle {
+        padding: 21px 0;
+      }
+
+      ul {
+        list-style: url("../images/icons/icons_li-el.svg");
+
+        li {
+          padding-bottom: 16px;
+          list-style-position: inside;
+        }
+
+        li:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.content .product {
+  padding-bottom: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  .registration {
+    &-wrap {
+      .registration__form {
+        margin-left: 16px;
+
+        .form__name {
+          .form__checkbox {
+            .checkbox-wr + .disabled {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      .registration__info {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 22px;
+
+        .info__title {
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .info__subtitle {
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .registration {
+    &-wrap {
+      flex-direction: column;
+
+      .registration__form {
+        margin: 0 8px;
+
+        .form__name {
+          .form__checkbox {
+            .checkbox-wr + .disabled {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      .registration__info {
+        padding-top: 40px;
+        max-width: 375px;
+      }
+    }
+  }
+  .content .product__title .title__name {
+    padding: 0;
+  }
+}
+
