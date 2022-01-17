@@ -1,0 +1,18 @@
+.select__item {
+  color: #6F6E6E;
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+
+  .select__logo {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+  }
+}
+
+.select__item:first-child {
+  padding-left: 0;
+}
+
+

@@ -1,0 +1,71 @@
+.subscribe__item {
+  max-width: 557px;
+  text-align: center;
+
+  .subscribe__item-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    padding-bottom: 32px;
+
+    span {
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  .subscribe__item-form {
+    display: flex;
+    max-width: 356px;
+    height: 49px;
+
+    .item-form__input {
+      position: relative;
+      width: 100%;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        padding-left: 22px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .item-form__btn {
+        max-width: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100px;
+
+        button {
+          width: 100%;
+          height: 100%;
+          border-radius: 0 20px 20px 0;
+          background: #F16D7F;
+          color: #FFFFFF;
+          font-size: 14px;
+          line-height: 17px;
+          border: none;
+          outline: none;
+        }
+
+        button:hover {
+          background: #E05C6E;
+        }
+      }
+    }
+  }
+
+  .subscribe__item-form::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    opacity: 0.67;
+  }
+}

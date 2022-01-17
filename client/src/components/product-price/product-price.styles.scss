@@ -1,0 +1,45 @@
+.product__price {
+  padding-top: 58px;
+
+  .product__price-wrap {
+    max-width: 360px;
+    min-height: 214px;
+    text-align: right;
+    background: #F5F3F3;
+    padding: 0 43px;
+
+    .price__title {
+      padding-top: 39px;
+      font-size: 11px;
+      line-height: 13px;
+      color: #4A4A4A;
+
+      span {
+        padding-left: 25px;
+      }
+    }
+
+    .price__subtitle {
+      padding-top: 12px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+
+      span {
+        padding-left: 25px;
+        color: #F16D7F;
+        font-weight: bold;
+      }
+    }
+
+    .product__border-line {
+      margin-top: 21px;
+      background: #E2E2E2;
+    }
+
+    .price__btn {
+      margin-top: 17px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.bottom__icons {
+  display: flex;
+
+  .icons-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7.29px;
+    width: 31.45px;
+    height: 32px;
+    background: #FFFFFF;
+  }
+
+  .icons-logo:last-child {
+    margin-right: 0;
+  }
+
+  // Animation icons
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-20px);
+    }
+
+    80% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes changeBg {
+    0% {
+      background: #FFFFFF;
+    }
+    100% {
+      background: #F16D7F;
+    }
+  }
+
+  .icons-logo:hover {
+    animation: bounce 1s, changeBg 1s forwards;
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
