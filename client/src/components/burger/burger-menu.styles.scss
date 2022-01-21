@@ -33,13 +33,13 @@
 
       .menu__icon_close {
         position: relative;
-        cursor: pointer;
 
         .menu__icon {
           position: absolute;
           top: 16px;
           right: 25px;
           color: #6F6E6E;
+          cursor: pointer;
         }
 
         .menu__icon:hover {

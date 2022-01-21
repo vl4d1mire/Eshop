@@ -1,14 +1,28 @@
-import React from 'react'
+import React from 'react';
+// import PropTypes from 'prop-types';
 
-const BurgerIcon = ({ open, setOpen }) => {
-
-    return (
-        <div className="burger__btn" onClick={() => setOpen(!open)}>
-            <div className={`bar1 ${ open ? 'change' : ''}`}/>
-            <div className={`bar2 ${ open ? 'change' : ''}`}/>
-            <div className={`bar3 ${ open ? 'change' : ''}`}/>
-        </div>
-    )
+function BurgerIcon({ open, setOpen }) {
+	return (
+		<button
+			type="button"
+			className="burger__btn"
+			onClick={() => setOpen(!open)}
+		>
+			<div className={`bar1 ${open ? 'change' : ''}`} />
+			<div className={`bar2 ${open ? 'change' : ''}`} />
+			<div className={`bar3 ${open ? 'change' : ''}`} />
+		</button>
+	);
 }
 
-export default BurgerIcon
+// BurgerIcon.defaultProps = {
+// 	setOpen: () => {},
+// };
+// 	open: 'false',
+
+// BurgerIcon.propTypes = {
+// 	open: PropTypes.bool,
+// 	setOpen: PropTypes.func,
+// };
+
+export default BurgerIcon;

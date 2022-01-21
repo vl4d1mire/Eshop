@@ -1,40 +1,42 @@
-import React, {useEffect} from 'react'
-import Cart from '../cart/cart.component'
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Cart from '../cart/cart.component';
 
-import {countPerPage, goodsFiltered, loadData, receivedProducts} from '../../redux/products/productsSlice'
-import {useDispatch, useSelector} from 'react-redux'
+import {
+	goodsFiltered,
+	loadData,
+	receivedProducts,
+} from '../../redux/products/productsSlice';
 
-import {useGetProductsQuery} from '../../services/productsApi'
-import Loader from '../loader/loader.component'
-import './product-list.styles.scss'
+import { useGetProductsQuery } from '../../services/productsApi';
+import Loader from '../loader/loader.component';
+import './product-list.styles.scss';
 
-const ProductList = () => {
+function ProductList() {
+	const { data = [], isLoading } = useGetProductsQuery();
 
-    const { data = [], isLoading } = useGetProductsQuery()
-    const dispatch = useDispatch()
+	const dispatch = useDispatch();
 
-    const products = useSelector(goodsFiltered)
+	const products = useSelector(goodsFiltered);
 
-    useEffect(() => {
-        dispatch(receivedProducts(data))
-        dispatch(loadData({count: 24}))
-    }, [data])
+	useEffect(() => {
+		dispatch(receivedProducts(data));
+		dispatch(loadData({ count: 24 }));
+	}, [data]);
 
+	if (isLoading) return <Loader />;
 
-    if (isLoading) return <Loader/>
-
-    return (
-        <div className="catalog__cart-container">
-            <div className="products__cart cart">
-                <div className="cart__container">
-                    {
-                        products && Object.values(products).map((item) => (
-                        <Cart key={item.id} item={item}/>))
-                    }
-                </div>
-            </div>
-        </div>
-    )
+	return (
+		<div className="catalog__cart-container">
+			<div className="products__cart cart">
+				<div className="cart__container">
+					{Object.values(products).map((item) => (
+						<Cart key={item.id} item={item} />
+					))}
+				</div>
+			</div>
+		</div>
+	);
 }
 
-export default ProductList
+export default ProductList;

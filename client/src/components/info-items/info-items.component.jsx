@@ -1,18 +1,31 @@
-import React from 'react'
-import './info-items.styles.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './info-items.styles.scss';
 
-const InfoItems = ({image, title, text}) => {
-  return (
-      <div className="info__items">
-          <div className="info__items-logo">
-              <img alt="" src={ image }/>
-          </div>
-          <div className="info__items-title">{ title }</div>
-          <div className="info__items-text">
-              <p>{ text }</p>
-          </div>
-      </div>
-  )
+function InfoItems({ image, title, text }) {
+	return (
+		<div className="info__items">
+			<div className="info__items-logo">
+				<img alt="" src={image} />
+			</div>
+			<div className="info__items-title">{title}</div>
+			<div className="info__items-text">
+				<p>{text}</p>
+			</div>
+		</div>
+	);
 }
 
-export default InfoItems
+InfoItems.defaultProps = {
+	image: '',
+	title: '',
+	text: '',
+};
+
+InfoItems.propTypes = {
+	image: PropTypes.string,
+	title: PropTypes.string,
+	text: PropTypes.string,
+};
+
+export default InfoItems;

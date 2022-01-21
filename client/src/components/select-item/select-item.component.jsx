@@ -1,18 +1,28 @@
-import React from 'react'
-import logo from '../../assets/arrow_down.svg'
-import SelectMenu from '../select-menu/select-menu.component'
-import './select-item.styles.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import logo from '../../assets/arrow_down.svg';
+import SelectMenu from '../select-menu/select-menu.component';
+import './select-item.styles.scss';
 
-const SelectItem = ({ name }) => {
-
-    return (
-        <div className="select__item">
-            <span>{ name }</span>
-            { name === 'SIZE' && <SelectMenu/>}
-            <div className="select__logo" style={{backgroundImage: `url(${logo})`}}/>
-        </div>
-    )
+function SelectItem({ name }) {
+	return (
+		<div className="select__item">
+			<span>{name}</span>
+			{name === 'SIZE' && <SelectMenu />}
+			<div
+				className="select__logo"
+				style={{ backgroundImage: `url(${logo})` }}
+			/>
+		</div>
+	);
 }
 
-export default SelectItem
+SelectItem.defaultProps = {
+	name: '',
+};
 
+SelectItem.propTypes = {
+	name: PropTypes.string,
+};
+
+export default SelectItem;

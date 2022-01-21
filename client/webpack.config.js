@@ -102,6 +102,7 @@ const config = {
     devServer: {
         hot: true,
         historyApiFallback: true,
+        allowedHosts: ['.gitpod.io']
     },
 };
 

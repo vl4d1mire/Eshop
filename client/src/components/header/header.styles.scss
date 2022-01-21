@@ -23,8 +23,6 @@
     align-items: flex-end;
     column-gap: 41px;
 
-
-
     &-logo:hover {
       filter: brightness(0.75);
       cursor: pointer;
@@ -68,6 +66,11 @@
           transform: rotate(45deg) translate(-6px, -8px);
         }
       }
+      
+      button {
+        border: none;
+        background: transparent;
+      }
 
       .burger__btn:hover {
         filter: brightness(0.75);
@@ -83,9 +86,9 @@
           border-radius: 19px;
           top: -10px;
           right: -7px;
-          color: #FFFFFF;
+          color: #ffffff;
           font-size: 0.85rem;
-          background: #EF5B70;
+          background: #ef5b70;
           text-align: center;
         }
       }

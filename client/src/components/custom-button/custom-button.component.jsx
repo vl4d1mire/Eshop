@@ -1,15 +1,21 @@
 import React from 'react';
-import './custom-button.styles.scss'
+// import PropTypes from 'prop-types';
+import './custom-button.styles.scss';
 
-const CustomButton = ({ children, ...otherProps}) => {
-    return (
-        <button
-            className="custom_button"
-            {...otherProps}
-        >
-            { children }
-        </button>
-    );
-};
+function CustomButton({ children, ...otherProps }) {
+	return (
+		<button type="button" className="custom_button" {...otherProps}>
+			{children}
+		</button>
+	);
+}
+
+// CustomButton.defaultProps = {
+// 	children: {},
+// };
+
+// CustomButton.propTypes = {
+// 	children: PropTypes.objectOf(PropTypes.object),
+// };
 
 export default CustomButton;

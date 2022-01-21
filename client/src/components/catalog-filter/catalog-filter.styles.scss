@@ -1,4 +1,4 @@
-$color_second: #EF5B70;
+$color_second: #ef5b70;
 
 .catalog__filter {
   width: 100%;
@@ -13,13 +13,12 @@ $color_second: #EF5B70;
       align-items: center;
       position: relative;
 
-      button {
-        border: none;
-        background: none;
+      .filter__title {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
         color: #000000;
+        cursor: pointer;
       }
 
       .filter__logo {
@@ -72,27 +71,27 @@ $color_second: #EF5B70;
 
 @media screen and (max-width: 375px) {
   .catalog__filter {
-      .filter-wr {
-        justify-content: space-between;
+    .filter-wr {
+      justify-content: space-between;
 
-        .filter__btn  {
-          button {
-            display: none;
-          }
+      .filter__btn {
+        button {
+          display: none;
+        }
 
-          .filter__logo {
-            transform: scale(2.5);
+        .filter__logo {
+          transform: scale(2.5);
           //  margin: 0;
           //  width: 38px;
           //  height: 25px;
           //  //background: url("/images/logo/logo_burger_twistie.svg") no-repeat;
-          }
         }
       }
-
-      .filter__select {
-        font-size: 12px;
-        line-height: 14px;
-      }
     }
+
+    .filter__select {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
 }
