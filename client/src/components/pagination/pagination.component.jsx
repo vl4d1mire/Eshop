@@ -19,7 +19,9 @@ function Pagination() {
 
 	const pages = [];
 
-	for (let i = 1; i <= totalPage; i + 1) {
+	console.log(typeof totalPage);
+
+	for (let i = 1; i <= totalPage; i++) {
 		pages.push(i);
 	}
 
@@ -50,10 +52,6 @@ function Pagination() {
 	if ((pages.length = minPageNumberLimit)) {
 		pageDecrementBtn = <li>....</li>;
 	}
-
-	// const handlerLoadMore = () => {
-	// 	// dispatch(loadData({count: pages.length, counterPerPage: countPerPage + 3}))
-	// };
 
 	return (
 		<div className="catalog__pagination pagination">

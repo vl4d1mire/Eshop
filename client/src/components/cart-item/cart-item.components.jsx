@@ -10,11 +10,12 @@ import './cart-item.styles.scss';
 
 function CartItem({ id, image, title, price, quantity }) {
 	const dispatch = useDispatch();
+	console.log(quantity);
 
 	function onQuantityChanged(e) {
-		const count = Number(e.target.value) || 0;
+		const quantity = Number(e.target.value) || 0;
 
-		dispatch(updateQuantityCart({ id, count }));
+		dispatch(updateQuantityCart({ id, quantity }));
 	}
 
 	return (

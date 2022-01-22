@@ -4,10 +4,10 @@
         "es2021": true
     },
     "extends": [
-        // "airbnb",
-        // "plugin:jsx-a11y/recommended",
-        // "plugin:prettier/recommended",
-        // "prettier"
+        "airbnb",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
