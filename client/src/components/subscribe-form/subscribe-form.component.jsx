@@ -10,8 +10,13 @@ function SubscribeForm() {
 			</p>
 			<div className="subscribe__item-form item-form">
 				<form className="item-form__input">
-					<label htmlFor="input-email" />
-					<input id="input-email" placeholder="Enter Your Email" type="email" />
+					<label htmlFor="input-email">
+						<input
+							id="input-email"
+							placeholder="Enter Your Email"
+							type="email"
+						/>
+					</label>
 					<div className="item-form__btn">
 						<button type="button">Subscribe</button>
 					</div>

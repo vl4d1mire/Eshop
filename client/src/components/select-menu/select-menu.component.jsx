@@ -6,24 +6,32 @@ function SelectMenu() {
 		<div className="select__item-menu active">
 			<div className="item-wrap">
 				<div className="item__list">
-					<input id="size-xs" type="checkbox" />
 					<div className="item__checkbox-mark" />
-					<label htmlFor="size-xs">XS</label>
+					<label htmlFor="size-xs">
+						XS
+						<input id="size-xs" type="checkbox" />
+					</label>
 				</div>
 				<div className="item__list">
-					<input id="size-s" type="checkbox" />
 					<div className="item__checkbox-mark" />
-					<label htmlFor="size-s">S</label>
+					<label htmlFor="size-s">
+						S
+						<input id="size-s" type="checkbox" />
+					</label>
 				</div>
 				<div className="item__list">
-					<input id="size-m" type="checkbox" />
 					<div className="item__checkbox-mark" />
-					<label htmlFor="size-m">M</label>
+					<label htmlFor="size-m">
+						M
+						<input id="size-m" type="checkbox" />
+					</label>
 				</div>
 				<div className="item__list">
-					<input id="size-l" type="checkbox" />
 					<div className="item__checkbox-mark" />
-					<label htmlFor="size-l">L</label>
+					<label htmlFor="size-l">
+						L
+						<input id="size-l" type="checkbox" />
+					</label>
 				</div>
 			</div>
 		</div>

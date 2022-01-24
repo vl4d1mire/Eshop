@@ -7,8 +7,6 @@ import './pagination.styles.scss';
 function Pagination() {
 	const currentPage = useSelector((state) => state.products?.currentPage);
 	const totalPage = useSelector((state) => state.products?.totalPage);
-	// const countPerPage = useSelector((state) => state.products?.countPerPage);
-	// const currentCount = useSelector((state) => state.products?.currentCount);
 	const maxPageNumberLimit = useSelector(
 		(state) => state.products?.maxPageNumberLimit
 	);
@@ -19,9 +17,7 @@ function Pagination() {
 
 	const pages = [];
 
-	console.log(typeof totalPage);
-
-	for (let i = 1; i <= totalPage; i++) {
+	for (let i = 1; i <= totalPage; i += 1) {
 		pages.push(i);
 	}
 
@@ -31,8 +27,9 @@ function Pagination() {
 				<li
 					key={number}
 					id={number}
-					onClick={() => dispatch(loadExactPage({ page: number }))}
 					className={currentPage === number ? 'active' : ''}
+					onClick={() => dispatch(loadExactPage({ page: number }))}
+					aria-hidden="true"
 				>
 					{number}
 				</li>
@@ -49,7 +46,7 @@ function Pagination() {
 
 	let pageDecrementBtn;
 
-	if ((pages.length = minPageNumberLimit)) {
+	if (pages.length === minPageNumberLimit) {
 		pageDecrementBtn = <li>....</li>;
 	}
 
@@ -86,16 +83,6 @@ function Pagination() {
 					<div className="bar2" />
 				</button>
 			</div>
-
-			{/* { totalPage !== 1 */}
-			{/*    ? <CustomButton */}
-			{/*        style={{"transform": "translate(10%, 50%)"}} */}
-			{/*        onClick={() => handlerLoadMore()} */}
-			{/*    > */}
-			{/*        Load More */}
-			{/*    </CustomButton> */}
-			{/*    : '' */}
-			{/* } */}
 		</div>
 	);
 }

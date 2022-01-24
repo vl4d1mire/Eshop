@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function BurgerIcon({ open, setOpen }) {
 	return (
@@ -15,14 +15,14 @@ function BurgerIcon({ open, setOpen }) {
 	);
 }
 
-// BurgerIcon.defaultProps = {
-// 	setOpen: () => {},
-// };
-// 	open: 'false',
+BurgerIcon.defaultProps = {
+	open: 'false',
+	setOpen: () => {},
+};
 
-// BurgerIcon.propTypes = {
-// 	open: PropTypes.bool,
-// 	setOpen: PropTypes.func,
-// };
+BurgerIcon.propTypes = {
+	open: PropTypes.bool,
+	setOpen: PropTypes.func,
+};
 
 export default BurgerIcon;

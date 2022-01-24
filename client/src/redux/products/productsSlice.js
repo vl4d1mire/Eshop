@@ -88,10 +88,6 @@ const productsSlice = createSlice({
       state.currentCount = upperCountExact;
       state.currentPage = exactPage;
     },
-    // loadMoreProducts(state, action) {
-    //     console.log(action.payload.count)
-    //     state.countPerPage += action.payload.count
-    // }
   },
 });
 
@@ -100,6 +96,6 @@ export const goodsFiltered = (state) => state.products.filteredProducts;
 export const countPerPage = (state) => state.products.countPerPage;
 export const maxPageNumberLimit = (state) => state.products.maxPageNumberLimit;
 export const {
-  receivedProducts, filterByValue, loadNewPage, loadData, loadExactPage, loadMoreProducts,
+  receivedProducts, filterByValue, loadNewPage, loadData, loadExactPage,
 } = productsSlice.actions;
 export default productsSlice.reducer;

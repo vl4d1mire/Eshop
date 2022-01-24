@@ -1,4 +1,4 @@
-import { createSelector, createSlice } from '@reduxjs/toolkit';
+import { createSelector, createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
   cartItems: {},
@@ -22,8 +22,8 @@ const cartSlice = createSlice({
       state.cartItems = {};
     },
     updateQuantityCart(state, action) {
-      const { id, quantity } = action.payload;
-      state.cartItems[id] = quantity;
+      const { id, count } = action.payload;
+      state.cartItems[id] = count;
     },
   },
 });
@@ -42,11 +42,14 @@ export default cartSlice.reducer;
 export const getCountItems = createSelector(
   (state) => state.cart?.cartItems,
   (cartItems) => {
-    let countItems = 0;
-    for (const id in cartItems) {
-      countItems += cartItems[id];
-    }
-    return countItems;
+    // let countItems = 0;
+    // for (const id in cartItems) {
+    //   countItems += cartItems[id];
+    // }
+    return Object.values(cartItems).reduce((acc, item) => {
+      return acc += item
+    }, 0)
+    // return countItems;
   },
 );
 
@@ -54,10 +57,14 @@ export const getTotalPrice = createSelector(
   (state) => state.cart?.cartItems,
   (state) => state.products?.products,
   (cartItems, products) => {
-    let total = 0;
-    for (const id in cartItems) {
-      total += products[id].price * cartItems[id];
-    }
-    return total;
+    return Object.values(cartItems).reduce((acc, item, index) => {
+      console.log(products[index]);
+      //  acc += products[index].price * item
+    }, 0)
+    // let total = 0;
+    // for (const id in cartItems) {
+    //   total += products[id].price * cartItems[id];
+    // }
+    // return total;
   },
 );

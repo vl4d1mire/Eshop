@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import {
 	removeItemFromCart,
@@ -10,12 +10,11 @@ import './cart-item.styles.scss';
 
 function CartItem({ id, image, title, price, quantity }) {
 	const dispatch = useDispatch();
-	console.log(quantity);
 
 	function onQuantityChanged(e) {
-		const quantity = Number(e.target.value) || 0;
+		const count = Number(e.target.value) || 0;
 
-		dispatch(updateQuantityCart({ id, quantity }));
+		dispatch(updateQuantityCart({ id, count }));
 	}
 
 	return (
@@ -44,13 +43,13 @@ function CartItem({ id, image, title, price, quantity }) {
 					<div className="cart__data">
 						<label htmlFor="cart__quantity" className="cart__quantity">
 							Quantity:
+							<input
+								onBlur={(e) => onQuantityChanged(e)}
+								defaultValue={quantity}
+								type="number"
+								id="cart__quantity"
+							/>
 						</label>
-						<input
-							onBlur={(e) => onQuantityChanged(e, id)}
-							defaultValue={quantity}
-							type="number"
-							id="cart__quantity"
-						/>
 					</div>
 				</div>
 			</div>
@@ -58,20 +57,20 @@ function CartItem({ id, image, title, price, quantity }) {
 	);
 }
 
-// CartItem.defaultProps = {
-// 	id: 0,
-// 	image: '',
-// 	title: '',
-// 	price: 0,
-// 	quantity: 0,
-// };
+CartItem.defaultProps = {
+	id: '0',
+	image: '',
+	title: '',
+	price: '',
+	quantity: 0,
+};
 
-// CartItem.propTypes = {
-// 	id: PropTypes.number,
-// 	image: PropTypes.string,
-// 	title: PropTypes.string,
-// 	price: PropTypes.number,
-// 	quantity: PropTypes.number,
-// };
+CartItem.propTypes = {
+	id: PropTypes.string,
+	image: PropTypes.string,
+	title: PropTypes.string,
+	price: PropTypes.string,
+	quantity: PropTypes.number,
+};
 
 export default CartItem;

@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './custom-button.styles.scss';
 
 function CustomButton({ children, ...otherProps }) {
@@ -10,12 +10,12 @@ function CustomButton({ children, ...otherProps }) {
 	);
 }
 
-// CustomButton.defaultProps = {
-// 	children: {},
-// };
+CustomButton.defaultProps = {
+	children: '',
+};
 
-// CustomButton.propTypes = {
-// 	children: PropTypes.objectOf(PropTypes.object),
-// };
+CustomButton.propTypes = {
+	children: PropTypes.string,
+};
 
 export default CustomButton;

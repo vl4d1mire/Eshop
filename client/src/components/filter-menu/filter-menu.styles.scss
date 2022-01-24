@@ -22,10 +22,9 @@
 
     button {
       color: #EF5B70;
-    }
-
-    .filter__logo {
-      //background: url("/public/images/logo/logo_filter_red.svg") no-repeat;
+      border: none;
+      background: none;
+      cursor: pointer;
     }
   }
 

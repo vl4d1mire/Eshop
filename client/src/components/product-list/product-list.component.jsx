@@ -30,9 +30,10 @@ function ProductList() {
 		<div className="catalog__cart-container">
 			<div className="products__cart cart">
 				<div className="cart__container">
-					{products && Object.values(products).map((item) => (
-						<Cart key={item.id} item={item} />
-					))}
+					{products &&
+						Object.values(products).map((item) => (
+							<Cart key={item.id} item={item} />
+						))}
 				</div>
 			</div>
 		</div>

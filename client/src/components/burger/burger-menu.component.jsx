@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './burger-menu.styles.scss';
 
 function BurgerMenu({ open, setOpen }) {
@@ -61,14 +61,14 @@ function BurgerMenu({ open, setOpen }) {
 	);
 }
 
-// BurgerMenu.defaultProps = {
-// 	open: 'false',
-// 	setOpen: () => {},
-// };
+BurgerMenu.defaultProps = {
+	open: 'false',
+	setOpen: () => {},
+};
 
-// BurgerMenu.propTypes = {
-// 	open: PropTypes.bool,
-// 	setOpen: PropTypes.func,
-// };
+BurgerMenu.propTypes = {
+	open: PropTypes.bool,
+	setOpen: PropTypes.func,
+};
 
 export default BurgerMenu;

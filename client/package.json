@@ -17,7 +17,11 @@
     "build": "cross-env NODE_ENV=production webpack",
     "build-dev": "webpack",
     "clean": "rmdir /s /q dist",
-    "server": "json-server -w ../server/db.json -p 3001"
+    "server": "json-server -w ../server/db.json -p 3001",
+    "_lint": "eslint --config ./.eslintrc.json --ext js --ext jsx ",
+    "lint": "npm run _lint -- ./src/",
+    "lint:fix": "npm run _lint -- --fix ./src/",
+    "format": "prettier --write './**/*.{js,jsx,css,scss,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [
