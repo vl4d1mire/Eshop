@@ -42,14 +42,7 @@ export default cartSlice.reducer;
 export const getCountItems = createSelector(
   (state) => state.cart?.cartItems,
   (cartItems) => {
-    // let countItems = 0;
-    // for (const id in cartItems) {
-    //   countItems += cartItems[id];
-    // }
-    return Object.values(cartItems).reduce((acc, item) => {
-      return acc += item
-    }, 0)
-    // return countItems;
+    return Object.values(cartItems).reduce((acc, item) => acc + item, 0)
   },
 );
 
@@ -57,14 +50,10 @@ export const getTotalPrice = createSelector(
   (state) => state.cart?.cartItems,
   (state) => state.products?.products,
   (cartItems, products) => {
-    return Object.values(cartItems).reduce((acc, item, index) => {
-      console.log(products[index]);
-      //  acc += products[index].price * item
+    return Object.entries(cartItems).reduce((acc, item) => {
+      const id = item[0];
+      const quantity = item[1];
+      return acc + products[id].price * quantity
     }, 0)
-    // let total = 0;
-    // for (const id in cartItems) {
-    //   total += products[id].price * cartItems[id];
-    // }
-    // return total;
-  },
+  }
 );
