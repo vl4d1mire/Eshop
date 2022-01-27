@@ -5,24 +5,24 @@ import SelectMenu from '../select-menu/select-menu.component';
 import './select-item.styles.scss';
 
 function SelectItem({ name }) {
-	return (
-		<div className="select__item">
-			<span>{name}</span>
-			{name === 'SIZE' && <SelectMenu />}
-			<div
-				className="select__logo"
-				style={{ backgroundImage: `url(${logo})` }}
-			/>
-		</div>
-	);
+  return (
+    <div className="select__item">
+      <span>{name}</span>
+      {name === 'SIZE' && <SelectMenu />}
+      <div
+        className="select__logo"
+        style={{ backgroundImage: `url(${logo})` }}
+      />
+    </div>
+  );
 }
 
 SelectItem.defaultProps = {
-	name: '',
+  name: '',
 };
 
 SelectItem.propTypes = {
-	name: PropTypes.string,
+  name: PropTypes.string,
 };
 
 export default SelectItem;

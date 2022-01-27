@@ -1,4 +1,4 @@
-$color_second: #ef5b70;
+$color-second: #ef5b70;
 
 .catalog__filter {
   width: 100%;
@@ -17,7 +17,7 @@ $color_second: #ef5b70;
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: #000;
         cursor: pointer;
       }
 
@@ -26,7 +26,6 @@ $color_second: #ef5b70;
         width: 15px;
         height: 10px;
         background-repeat: no-repeat;
-        //background-image: url("/images/logo/logo_burger_twistie.svg");
         padding-right: 330px;
       }
     }
@@ -49,7 +48,7 @@ $color_second: #ef5b70;
   }
 }
 
-//Media screens
+// Media screens
 @media screen and (min-width: 769px) and (max-width: 1268px) {
   .catalog__filter .filter-wr {
     justify-content: center;
@@ -81,10 +80,6 @@ $color_second: #ef5b70;
 
         .filter__logo {
           transform: scale(2.5);
-          //  margin: 0;
-          //  width: 38px;
-          //  height: 25px;
-          //  //background: url("/images/logo/logo_burger_twistie.svg") no-repeat;
         }
       }
     }

@@ -24,7 +24,7 @@
     .menu__items {
       min-width: 232px;
       height: 764px;
-      background: #FFFFFF;
+      background: #fff;
 
       .menu__wrap {
         height: 764px;
@@ -38,12 +38,12 @@
           position: absolute;
           top: 16px;
           right: 25px;
-          color: #6F6E6E;
+          color: #6f6e6e;
           cursor: pointer;
         }
 
         .menu__icon:hover {
-          color: #EF5B70;
+          color: #ef5b70;
         }
 
         .menu__icon:active {
@@ -58,11 +58,11 @@
         line-height: 17px;
 
         .menu__title {
-          color: #EF5B70;
+          color: #ef5b70;
         }
 
         .menu__title_color {
-          color: #000000;
+          color: #000;
         }
 
         .menu__cart {
@@ -77,7 +77,7 @@
               padding: 11px 0 0 11px;
               font-size: 14px;
               line-height: 17px;
-              color: #6F6E6E;
+              color: #6f6e6e;
             }
 
             li:last-child {

@@ -21,7 +21,8 @@
     "_lint": "eslint --config ./.eslintrc.json --ext js --ext jsx ",
     "lint": "npm run _lint -- ./src/",
     "lint:fix": "npm run _lint -- --fix ./src/",
-    "format": "prettier --write './**/*.{js,jsx,css,scss,md,json}' --config ./.prettierrc"
+    "format": "prettier --write \"**/*{js,jsx,css,scss,md,json}\" --config ./.prettierrc",
+    "lint:css": "stylelint \"**/*{css,scss}\" --fix --ignore-path .gitignore "
   },
   "eslintConfig": {
     "extends": [
@@ -68,6 +69,12 @@
     "react-refresh": "^0.11.0",
     "react-scripts": "^5.0.0",
     "redux-logger": "^3.0.6",
+    "stylelint": "^14.3.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.1.0",
     "web-vitals": "^2.1.2",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",

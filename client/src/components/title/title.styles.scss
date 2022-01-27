@@ -3,10 +3,10 @@
   justify-content: space-around;
   align-items: center;
   min-height: 148px;
-  background: #F8F3F4;
+  background: #f8f3f4;
 
   &__name {
-    color: #F16D7F;
+    color: #f16d7f;
     font-size: 24px;
     line-height: 29px;
   }
@@ -16,8 +16,9 @@
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+
     a:hover {
-      color: #F16D7F;
+      color: #f16d7f;
       font-weight: bold;
     }
   }

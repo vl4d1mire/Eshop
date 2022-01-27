@@ -1,8 +1,7 @@
 .products__cart {
   .cart__container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     padding-top: 48px;
     column-gap: 30px;

@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    max-width: 1600px;
-    min-height: 100%;
-    margin: 0 auto;
-    background: #FFFFFF;
-    font-family: Lato, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+  max-width: 1600px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

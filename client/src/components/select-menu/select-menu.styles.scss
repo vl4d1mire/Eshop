@@ -7,7 +7,7 @@
     position: relative;
     width: 79px;
     height: 103px;
-    background: #FFFFFF;
+    background: #fff;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 1;
     display: flex;
@@ -28,7 +28,7 @@
         height: 100%;
         opacity: 0;
         z-index: 1;
-        border: 1px solid #EBEBEB;
+        border: 1px solid #ebebeb;
         cursor: pointer;
       }
 
@@ -37,7 +37,7 @@
         position: absolute;
         width: 12px;
         height: 12px;
-        background: #EF5B70;
+        background: #ef5b70;
         top: 2px;
         left: 0;
         font-size: 10px;
@@ -46,7 +46,7 @@
       .item__checkbox-mark {
         width: 12px;
         height: 12px;
-        border: 1px solid #EBEBEB;
+        border: 1px solid #ebebeb;
       }
 
       label {

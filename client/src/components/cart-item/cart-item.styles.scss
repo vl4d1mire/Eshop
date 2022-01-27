@@ -22,8 +22,8 @@
     .cart__title {
       font-size: 24px;
       line-height: 29px;
-      color: #222222;
-      padding: 22px 0 36px 0;
+      color: #222;
+      padding: 22px 0 36px;
     }
 
     button {
@@ -40,7 +40,7 @@
     button:hover {
       cursor: pointer;
       transform: scale(1.05);
-      color: #EF5B70;
+      color: #ef5b70;
     }
 
     button:active {
@@ -60,21 +60,21 @@
         }
 
         .cart__data_red {
-          color: #EF5B70;
+          color: #ef5b70;
         }
 
         input {
           width: 35px;
           height: 24px;
-          border: 1px solid #EAEAEA;
-          background: #FFFFFF;
+          border: 1px solid #eaeaea;
+          background: #fff;
           text-align: center;
           margin: 0 4px;
         }
 
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
+          appearance: none;
           margin: 0;
         }
 

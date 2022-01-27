@@ -3,7 +3,7 @@
     .cart {
       max-width: 360px;
       max-height: 581px;
-      background: #F8F8F8;
+      background: #f8f8f8;
       position: relative;
 
       img {
@@ -20,13 +20,13 @@
         left: 112px;
         width: 138px;
         height: 43px;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #fff;
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: #FFFFFF;
+        color: #fff;
         cursor: pointer;
 
         img {
@@ -35,6 +35,7 @@
           margin-right: 11px;
         }
       }
+
       .cart__basket:active {
         transform: scale(0.98);
       }
@@ -70,7 +71,7 @@
       font-weight: normal;
       font-size: 13px;
       line-height: 16px;
-      color: #000000;
+      color: #000;
     }
 
     .cart__text {
@@ -78,13 +79,13 @@
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
-      color: #5D5D5D;
+      color: #5d5d5d;
     }
 
     .cart__price {
       font-size: 16px;
       line-height: 19px;
-      color: #F16D7F;
+      color: #f16d7f;
       padding-top: 18px;
     }
   }

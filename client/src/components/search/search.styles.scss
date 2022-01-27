@@ -3,7 +3,7 @@
   height: 100%;
 
   .search__logo {
-    background-image: url("https://i.ibb.co/vQY2jnZ/search.png");
+    background-image: url('https://i.ibb.co/vQY2jnZ/search.png');
     background-repeat: no-repeat;
     width: 30px;
     height: 35px;
@@ -21,9 +21,9 @@
     outline: none;
     border: 1px solid transparent;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: #fff;
     font-size: 1.1rem;
-    text-outline: none;
+    text-decoration: none;
   }
 
   input:focus {

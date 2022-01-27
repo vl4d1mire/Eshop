@@ -5,13 +5,13 @@ import Pagination from '../pagination/pagination.component';
 import './catalog.styles.scss';
 
 function Catalog() {
-	return (
-		<section className="catalog">
-			<CatalogFilter />
-			<ProductList />
-			<Pagination />
-		</section>
-	);
+  return (
+    <section className="catalog">
+      <CatalogFilter />
+      <ProductList />
+      <Pagination />
+    </section>
+  );
 }
 
 export default Catalog;

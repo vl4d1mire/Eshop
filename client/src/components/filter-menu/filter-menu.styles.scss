@@ -7,7 +7,7 @@
   top: -13px;
   left: 0;
   padding: 0 17px;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 1;
 
@@ -16,16 +16,15 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #EF5B70;
+    color: #ef5b70;
     display: flex;
     align-items: center;
 
     button {
-      color: #EF5B70;
+      color: #ef5b70;
       border: none;
       background: none;
       cursor: pointer;
     }
   }
-
 }

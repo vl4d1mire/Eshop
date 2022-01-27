@@ -9,25 +9,25 @@ import EmptyBasket from '../../components/empty-basket/empty-basket.component';
 import './basket-page.styles.scss';
 
 function BasketPage() {
-	const cartItems = useSelector(cartList);
+  const cartItems = useSelector(cartList);
 
-	return (
-		<div className="content">
-			<div className="product">
-				<Title />
-				<div className="product__container">
-					{Object.keys(cartItems).length ? (
-						<>
-							<CartBasket />
-							<ProductOrder />
-						</>
-					) : (
-						<EmptyBasket />
-					)}
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="content">
+      <div className="product">
+        <Title />
+        <div className="product__container">
+          {Object.keys(cartItems).length ? (
+            <>
+              <CartBasket />
+              <ProductOrder />
+            </>
+          ) : (
+            <EmptyBasket />
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default BasketPage;

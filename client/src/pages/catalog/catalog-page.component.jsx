@@ -4,12 +4,12 @@ import Information from '../../components/information/information.component';
 import './catalog-page.styles.scss';
 
 function CatalogPage() {
-	return (
-		<>
-			<Content />
-			<Information />
-		</>
-	);
+  return (
+    <>
+      <Content />
+      <Information />
+    </>
+  );
 }
 
 export default CatalogPage;
