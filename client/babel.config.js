@@ -2,6 +2,7 @@
 const plugins = [];
 if (process.env.NODE_ENV !== "production") {
     plugins.push("react-refresh/babel");
+    plugins.push("@babel/plugin-proposal-class-properties")
     plugins.push(["@babel/transform-runtime"]);
 }
 
@@ -12,5 +13,5 @@ module.exports = {
         // in files only using JSX (no state or React methods)
         ["@babel/preset-react", { runtime: "automatic"} ],
     ],
-    plugins: plugins,
+    plugins,
 };
