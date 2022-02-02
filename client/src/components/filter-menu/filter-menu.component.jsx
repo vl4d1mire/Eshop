@@ -1,4 +1,3 @@
-import React from 'react';
 import FilterList from '../filter-list/filter-list.component';
 import filterLogo from '../../assets/logo_filter_red.svg';
 

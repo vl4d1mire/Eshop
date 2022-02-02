@@ -1,10 +1,13 @@
 // Cannot load "react-refresh/babel" in production
 const plugins = [];
-if (process.env.NODE_ENV !== "production") {
-    plugins.push("react-refresh/babel");
+if (process.env.NODE_ENV === "development") {
+    plugins.push("react-refresh/babel")
     plugins.push("@babel/plugin-proposal-class-properties")
-    plugins.push(["@babel/transform-runtime"]);
+    plugins.push("@babel/plugin-syntax-dynamic-import")
+    plugins.push(["@babel/transform-runtime"])
 }
+
+
 
 module.exports = {
     presets: [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 import Title from '../../components/title/title.component';
 import CartBasket from '../../components/cart-basket/cart-basket.component';

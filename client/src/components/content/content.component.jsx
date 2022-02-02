@@ -1,4 +1,3 @@
-import React from 'react';
 import Title from '../title/title.component';
 import Catalog from '../catalog/catalog.component';
 

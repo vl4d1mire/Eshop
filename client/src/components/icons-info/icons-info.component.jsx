@@ -1,5 +1,3 @@
-import React from 'react';
-
 function IconsInfo() {
   return (
     <div className="icons__info-logo">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
 import { filterByValue } from '../../redux/products/productsSlice';
 import './search.styles.scss';

@@ -1,4 +1,3 @@
-import React from 'react';
 import CatalogFilter from '../catalog-filter/catalog-filter.component';
 import ProductList from '../product-list/product-list.component';
 import Pagination from '../pagination/pagination.component';

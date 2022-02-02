@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import InfoItems from '../info-items/info-items.component';
 import './information.styles.scss';
 

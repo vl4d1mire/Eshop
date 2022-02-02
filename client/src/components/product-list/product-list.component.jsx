@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Cart from '../cart/cart.component';
 
@@ -22,7 +22,7 @@ function ProductList() {
   useEffect(() => {
     dispatch(receivedProducts(data));
     dispatch(loadData({ count: 24 }));
-  }, [data]);
+  }, [data, dispatch]);
 
   if (isLoading) return <Loader />;
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import FooterBottom from '../footer-bottom/footer-bottom.component';
 import SubscribeForm from '../subscribe-form/subscribe-form.component';
 

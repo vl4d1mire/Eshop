@@ -1,4 +1,3 @@
-import React from 'react';
 import './head.styles.scss';
 
 function Head() {

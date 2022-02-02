@@ -1,4 +1,3 @@
-import React from 'react';
 import FooterNav from '../footer-nav/footer-nav.component';
 
 import './footer-bottom.styles.scss';

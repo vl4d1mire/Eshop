@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import CatalogPage from './pages/catalog/catalog-page.component';
 import CartPage from './pages/basket/basket-page.component';

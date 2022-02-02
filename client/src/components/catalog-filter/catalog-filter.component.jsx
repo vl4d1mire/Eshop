@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import SelectItem from '../select-item/select-item.component';
 import filterLogo from '../../assets/logo-filter.png';

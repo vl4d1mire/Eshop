@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import IconsLogo from '../icons-logo/icons-logo.component';
 
 function FooterNav() {

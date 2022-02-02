@@ -1,4 +1,3 @@
-import React from 'react';
 import './subscribe-form.styles.scss';
 
 function SubscribeForm() {

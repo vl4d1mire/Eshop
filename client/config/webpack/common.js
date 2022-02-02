@@ -4,18 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const paths = require('../paths')
 
-// const babelLoader = {
-//     loader: 'babel-loader',
-//     options: {
-//         presets: ['@babel/preset-env', '@babel/preset-react'],
-//         plugins: [
-//             '@babel/plugin-proposal-class-properties',
-//             '@babel/plugin-syntax-dynamic-import',
-//             '@babel/plugin-transform-runtime'
-//         ]
-//     }
-// }
-
 module.exports = {
     entry: `${paths.src}/index.js`,
     output: {

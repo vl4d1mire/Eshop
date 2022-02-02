@@ -1,8 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import logo from '../../assets/arrow_down.svg';
-import SelectMenu from '../select-menu/select-menu.component';
 import './select-item.styles.scss';
+import SelectMenu from '../select-menu/select-menu.component';
 
 function SelectItem({ name }) {
   return (
