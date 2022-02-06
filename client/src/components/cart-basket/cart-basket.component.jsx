@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.components';
 import { cartList, removeAllItemsFromCart } from '../../redux/cart/cartSlice';
+import { goods } from '../../redux/products/productsSlice';
 
 import './cart-basket.styles.scss';
 
 function CartBasket() {
   const dispatch = useDispatch();
   const cartItems = useSelector(cartList);
-  const products = useSelector((state) => state.products?.products);
+  const products = useSelector(goods);
 
   return (
     <div className="product__cart">

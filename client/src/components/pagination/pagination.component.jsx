@@ -16,38 +16,71 @@ function Pagination() {
 
   const pages = [];
 
-  for (let i = 1; i <= totalPage; i += 1) {
+  for (let i = 1; i < totalPage; i += 1) {
     pages.push(i);
   }
 
-  const renderPageNumbers = pages.map((number) => {
-    if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
-      return (
-        <li
-          key={number}
-          id={number}
-          className={currentPage === number ? 'active' : ''}
-          onClick={() => dispatch(loadExactPage({ page: number }))}
-          aria-hidden="true"
-        >
-          {number}
-        </li>
-      );
-    }
-    return null;
-  });
+  const renderPageNumbers = pages
+    .filter((number) => number !== 1)
+    .map((number) => {
+      if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit - 1) {
+        return (
+          <li
+            key={number}
+            id={number}
+            className={currentPage === number ? 'active' : null}
+            onClick={() => dispatch(loadExactPage({ page: number }))}
+            aria-hidden="true"
+          >
+            {number}
+          </li>
+        );
+      }
+      return null;
+    });
 
-  let pageIncrementBtn;
+  let pageIncrementBtn = null;
 
   if (pages.length > maxPageNumberLimit) {
-    pageIncrementBtn = <li>...</li>;
+    pageIncrementBtn = (
+      <li onClick={() => dispatch(loadNewPage({ page: 1 }))} aria-hidden="true">
+        &hellip;
+      </li>
+    );
   }
 
-  let pageDecrementBtn;
+  let pageDecrementBtn = null;
 
-  if (pages.length === minPageNumberLimit) {
-    pageDecrementBtn = <li>....</li>;
+  if (minPageNumberLimit >= 1) {
+    pageDecrementBtn = (
+      <li
+        onClick={() => dispatch(loadNewPage({ page: -1 }))}
+        aria-hidden="true"
+      >
+        &hellip;
+      </li>
+    );
   }
+
+  const firstPage = (
+    <li
+      className={currentPage === 1 ? 'active' : null}
+      onClick={() => dispatch(loadExactPage({ page: 1 }))}
+      aria-hidden="true"
+    >
+      1
+    </li>
+  );
+
+  const lastPage = (
+    <li
+      className={currentPage === pages.length + 1 ? 'active' : null}
+      onClick={() => dispatch(loadExactPage({ page: pages.length + 1 }))}
+      aria-hidden="true"
+    >
+      {pages.length + 1}
+    </li>
+  );
 
   return (
     <div className="catalog__pagination pagination">
@@ -56,24 +89,30 @@ function Pagination() {
           type="button"
           className="pagination__arrow pagination-prev"
           onClick={() => dispatch(loadNewPage({ page: -1 }))}
-          disabled={currentPage === 1}
-          style={currentPage === 1 ? { opacity: 0.1, cursor: 'default' } : null}
+          disabled={currentPage === pages[0]}
+          style={
+            currentPage === pages[0]
+              ? { opacity: 0.1, cursor: 'default' }
+              : null
+          }
         >
           <div className="bar1" />
           <div className="bar2" />
         </button>
         <div className="pagination__list">
+          {firstPage}
           {pageDecrementBtn}
           {renderPageNumbers}
           {pageIncrementBtn}
+          {lastPage}
         </div>
         <button
           type="button"
           className="pagination__arrow pagination-next"
           onClick={() => dispatch(loadNewPage({ page: 1 }))}
-          disabled={currentPage === totalPage}
+          disabled={currentPage === pages.length + 1}
           style={
-            currentPage === totalPage
+            currentPage === pages.length + 1
               ? { opacity: 0.1, cursor: 'default' }
               : null
           }
