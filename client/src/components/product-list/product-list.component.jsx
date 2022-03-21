@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
+import { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Cart from '../cart/cart.component';
 
 import {
   countPerPage,
-  goodsFiltered,
   loadData,
   productsPerPage,
   receivedProducts,
@@ -20,18 +19,16 @@ function ProductList() {
 
   const dispatch = useDispatch();
 
-  const productsFiltered = useSelector(goodsFiltered);
   const products = useSelector(productsPerPage);
   const productPerPage = useSelector(countPerPage);
   const totalProducts = useSelector((state) => state.products?.totalProducts);
-  const appliedFilters = useSelector((state) => state.products?.appliedFilters);
 
-  useEffect(() => {
+  useMemo(() => {
     if (data.length) {
       dispatch(receivedProducts(data));
       dispatch(loadData({ count: data.length }));
     }
-  }, [data, dispatch, productsFiltered, appliedFilters]);
+  }, [data, dispatch]);
 
   return (
     <>

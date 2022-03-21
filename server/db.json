@@ -7,8 +7,8 @@
       "title": "JACKET",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
       "price": "20.00",
-      "category": "jacket"
-
+      "category": "jacket",
+      "gender": "man"
     },
     {
       "id": 2,
@@ -16,7 +16,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "DRESS",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "21.00"
+      "price": "21.00",
+      "category": "dress",
+      "gender": "woman"
     },
     {
       "id": 3,
@@ -24,7 +26,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATER",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "25.00"
+      "price": "25.00",
+      "category": "sweater",
+      "gender": "man"
     },
     {
       "id": 4,
@@ -32,7 +36,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "T-SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "18.00"
+      "price": "18.00",
+      "category": "t-shirt",
+      "gender": "man"
     },
     {
       "id": 5,
@@ -40,7 +46,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SUIT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "27.00"
+      "price": "27.00",
+      "category": "suit",
+      "gender": "woman"
     },
     {
       "id": 6,
@@ -48,7 +56,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "15.00"
+      "price": "15.00",
+      "category": "shirt",
+      "gender": "man"
     },
     {
       "id": 7,
@@ -56,7 +66,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "30.00"
+      "price": "30.00",
+      "category": "shirt",
+      "gender": "man"
     },
     {
       "id": 8,
@@ -64,7 +76,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATSHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "19.00"
+      "price": "19.00",
+      "category": "sweatshirt",
+      "gender": "man"
     },
     {
       "id": 9,
@@ -72,7 +86,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "FLAT CAP",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "42.00"
+      "price": "42.00",
+      "category": "cap",
+      "gender": "man"
     },
     {
       "id": 10,
@@ -80,7 +96,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "BELT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "36.00"
+      "price": "36.00",
+      "category": "belt",
+      "gender": "man"
     },
     {
       "id": 11,
@@ -88,7 +106,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "JACKET",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "24.00"
+      "price": "24.00",
+      "category": "jacket",
+      "gender": "man"
     },
     {
       "id": 12,
@@ -96,7 +116,8 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "FLAT CAP",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "22.00"
+      "price": "22.00",
+      "category": "cap"
     },
     {
       "id": 13,
@@ -105,8 +126,8 @@
       "title": "JACKET",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
       "price": "22.00",
-      "category": "jacket"
-
+      "category": "jacket",
+      "gender": "man"
     },
     {
       "id": 14,
@@ -114,7 +135,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "DRESS",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "18.00"
+      "price": "18.00",
+      "category": "dress",
+      "gender": "woman"
     },
     {
       "id": 15,
@@ -122,7 +145,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATER",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "20.00"
+      "price": "20.00",
+      "category": "sweater",
+      "gender": "man"
     },
     {
       "id": 16,
@@ -130,7 +155,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "T-SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "19.00"
+      "price": "19.00",
+      "category": "t-shirt",
+      "gender": "woman"
     },
     {
       "id": 17,
@@ -138,7 +165,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SUIT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "26.00"
+      "price": "26.00",
+      "category": "suit",
+      "gender": "woman"
     },
     {
       "id": 18,
@@ -146,7 +175,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "16.00"
+      "price": "16.00",
+      "category": "shirt",
+      "gender": "man"
     },
     {
       "id": 19,
@@ -154,7 +185,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "29.00"
+      "price": "29.00",
+      "category": "shirt",
+      "gender": "man"
     },
     {
       "id": 20,
@@ -162,7 +195,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATSHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "20.00"
+      "price": "20.00",
+      "category": "sweatshirt",
+      "gender": "man"
     },
     {
       "id": 21,
@@ -170,7 +205,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "FLAT CAP",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "41.00"
+      "price": "41.00",
+      "category": "cap",
+      "gender": "man"
     },
     {
       "id": 22,
@@ -178,7 +215,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "BELT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "35.00"
+      "price": "35.00",
+      "category": "belt",
+      "gender": "man"
     },
     {
       "id": 23,
@@ -186,7 +225,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "JACKET",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "23.00"
+      "price": "23.00",
+      "category": "jacket",
+      "gender": "man"
     },
     {
       "id": 24,
@@ -194,7 +235,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "FLAT CAP",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "21.00"
+      "price": "21.00",
+      "category": "cap",
+      "gender": "man"
     },
     {
       "id": 25,
@@ -204,7 +247,6 @@
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
       "price": "20.00",
       "category": "jacket"
-
     },
     {
       "id": 26,
@@ -212,7 +254,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "DRESS",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "21.00"
+      "price": "21.00",
+      "category": "dress",
+      "gender": "woman"
     },
     {
       "id": 27,
@@ -220,7 +264,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATER",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "25.00"
+      "price": "25.00",
+      "category": "sweater",
+      "gender": "man"
     },
     {
       "id": 28,
@@ -228,7 +274,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "T-SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "18.00"
+      "price": "18.00",
+      "category": "t-shirt",
+      "gender": "man"
     },
     {
       "id": 29,
@@ -236,7 +284,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SUIT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "27.00"
+      "price": "27.00",
+      "category": "suit",
+      "gender": "woman"
     },
     {
       "id": 30,
@@ -244,7 +294,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "15.00"
+      "price": "15.00",
+      "category": "shirt",
+      "gender": "woman"
     },
     {
       "id": 31,
@@ -252,7 +304,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "30.00"
+      "price": "30.00",
+      "category": "shirt",
+      "gender": "man"
     },
     {
       "id": 32,
@@ -260,7 +314,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "SWEATSHIRT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "19.00"
+      "price": "19.00",
+      "category": "sweatshirt",
+      "gender": "man"
     },
     {
       "id": 33,
@@ -268,7 +324,9 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "FLAT CAP",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "42.00"
+      "price": "42.00",
+      "category": "cap",
+      "gender": "man"
     },
     {
       "id": 34,
@@ -276,7 +334,164 @@
       "logo": "/images/logo/logo_basket.svg",
       "title": "BELT",
       "subtitle": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Elleryteams up with Moda Operandi.",
-      "price": "36.00"
+      "price": "36.00",
+      "category": "belt",
+      "gender": "man"
     }
-  ]
+  ],
+  "categories": {
+    "hats": {
+      "id": 1,
+      "title": "Hats",
+      "routeName": "hats",
+      "items": [
+        {
+          "id": 1,
+          "name": "Brown Brim",
+          "imageUrl": "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+          "price": 25
+        },
+        {
+          "id": 2,
+          "name": "Blue Beanie",
+          "imageUrl": "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+          "price": 18
+        },
+        {
+          "id": 3,
+          "name": "Brown Cowboy",
+          "imageUrl": "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+          "price": 35
+        },
+        {
+          "id": 4,
+          "name": "Grey Brim",
+          "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
+          "price": 25
+        },
+        {
+          "id": 5,
+          "name": "Green Beanie",
+          "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
+          "price": 18
+        },
+        {
+          "id": 6,
+          "name": "Palm Tree Cap",
+          "imageUrl": "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+          "price": 14
+        },
+        {
+          "id": 7,
+          "name": "Red Beanie",
+          "imageUrl": "https://i.ibb.co/bLB646Z/red-beanie.png",
+          "price": 18
+        },
+        {
+          "id": 8,
+          "name": "Wolf Cap",
+          "imageUrl": "https://i.ibb.co/1f2nWMM/wolf-cap.png",
+          "price": 14
+        },
+        {
+          "id": 9,
+          "name": "Blue Snapback",
+          "imageUrl": "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+          "price": 16
+        }
+      ]
+    },
+    "sneakers": {
+      "id": 2,
+      "title": "Sneakers",
+      "routeName": "sneakers",
+      "items": [
+        {
+          "id": 10,
+          "name": "Adidas NMD",
+          "imageUrl": "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+          "price": 220
+        },
+        {
+          "id": 11,
+          "name": "Adidas Yeezy",
+          "imageUrl": "https://i.ibb.co/dJbG1cT/yeezy.png",
+          "price": 280
+        },
+        {
+          "id": 12,
+          "name": "Black Converse",
+          "imageUrl": "https://i.ibb.co/bPmVXyP/black-converse.png",
+          "price": 110
+        },
+        {
+          "id": 13,
+          "name": "Nike White AirForce",
+          "imageUrl": "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
+          "price": 160
+        },
+        {
+          "id": 14,
+          "name": "Nike Red High Tops",
+          "imageUrl": "https://i.ibb.co/QcvzydB/nikes-red.png",
+          "price": 160
+        },
+        {
+          "id": 15,
+          "name": "Nike Brown High Tops",
+          "imageUrl": "https://i.ibb.co/fMTV342/nike-brown.png",
+          "price": 160
+        },
+        {
+          "id": 16,
+          "name": "Air Jordan Limited",
+          "imageUrl": "https://i.ibb.co/w4k6Ws9/nike-funky.png",
+          "price": 190
+        },
+        {
+          "id": 17,
+          "name": "Timberlands",
+          "imageUrl": "https://i.ibb.co/Mhh6wBg/timberlands.png",
+          "price": 200
+        }
+      ]
+    },
+    "jackets": {
+      "id": 3,
+      "title": "Jackets",
+      "routeName": "jackets",
+      "items": [
+        {
+          "id": 18,
+          "name": "Black Jean Shearling",
+          "imageUrl": "https://i.ibb.co/XzcwL5s/black-shearling.png",
+          "price": 125
+        },
+        {
+          "id": 19,
+          "name": "Blue Jean Jacket",
+          "imageUrl": "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
+          "price": 90
+        },
+        {
+          "id": 20,
+          "name": "Grey Jean Jacket",
+          "imageUrl": "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
+          "price": 90
+        },
+        {
+          "id": 21,
+          "name": "Brown Shearling",
+          "imageUrl": "https://i.ibb.co/s96FpdP/brown-shearling.png",
+          "price": 165
+        },
+        {
+          "id": 22,
+          "name": "Tan Trench",
+          "imageUrl": "https://i.ibb.co/M6hHc3F/brown-trench.png",
+          "price": 185
+        }
+      ]
+    }
+  }
 }
